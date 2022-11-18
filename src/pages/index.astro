@@ -1,4 +1,22 @@
 ---
+const ands = [
+	"+",
+	"&",
+	"and",
+]
+const colors = [
+	"almostblue",
+	"almostgreen",
+	"almostorange",
+]
+const shapes = [
+	"rounded-md",
+	"rounded-full",
+]
+
+function randomItem(a) {
+	return a[Math.floor(Math.random() * a.length)]
+}
 ---
 
 <html lang="en">
@@ -7,9 +25,13 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Almost89</title>
 	</head>
-	<body>
-		<h1>My Astro Site</h1>
+	<body class="flex h-screen text-center">
+		<div class="m-auto">
+			<span class="text-transparent bg-clip-text bg-gradient-to-r from-almostblue to-almostorange font-extrabold text-4xl">Almost89</span><br>
+			<code class="font-semibold tracking-tight">Roblox developer {randomItem(ands)} other cool stuff.</code><br>
+			<code class="text-xs font-thin">More coming soon™️.</code>
+		</div>
 	</body>
 </html>
