@@ -1,3 +1,3 @@
-# almost89.github.io
+# [almost89.github.io](https://almost89.github.io)
 
-My [new website](https://almost89.github.io) built with Astro 🚀✨
+My [new website](https://almost89.github.io) built with Astro + TailwindCSS 🚀🍃
