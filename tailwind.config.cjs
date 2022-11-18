@@ -7,6 +7,7 @@ module.exports = {
         almostblue: '#2292A4',
         almostorange: '#D96C06',
         almostgreen: '#BDBF09',
+        almostwhite: '#F5EFED',
       },
     },
   },
