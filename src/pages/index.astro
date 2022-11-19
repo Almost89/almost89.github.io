@@ -1,33 +1,14 @@
 ---
-const ands = [
-	"+",
-	"&",
-	"and",
-]
-const colors = [
-	"almostblue",
-	"almostgreen",
-	"almostorange",
-]
-
-function randomItem(a) {
-	return a[Math.floor(Math.random() * a.length)]
-}
+import BaseLayout from "../layouts/BaseLayout.astro"
+import Link from "../components/Link.astro"
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Almost89</title>
-	</head>
-	<body class="bg-almostwhite flex h-screen text-center">
-		<div class="m-auto">
+<BaseLayout title="Home">
+	<div class="flex h-screen text-center">
+		<div class="m-auto hover:shadow-lg p-6 rounded-md border border-almostwhite hover:border-almostdark hover:-translate-y-3 transition-all">
 			<span class="text-transparent bg-clip-text bg-gradient-to-r from-almostblue to-almostorange font-extrabold text-4xl">Almost89</span><br>
-			<code class="font-semibold tracking-tight">Roblox developer {randomItem(ands)} other cool stuff like that.</code><br>
-			<code class="text-xs font-thin">More coming soon™️.</code>
+			<code class="font-semibold tracking-tight text-almostdark">Roblox developer + other cool stuff like that.</code><br>
+			<code class="text-xs font-thin text-almostdark blur-sm hover:blur-none transition-all tracking-tight select-none hover:select-auto">More coming soon™️.</code>
 		</div>
-	</body>
-</html>
+	</div>
+	<footer class="-translate-y-14 tracking-tight text-center"><code>Built with <Link href="https://astro.build">Astro</Link> + <Link href="https://tailwindcss.com/">TailwindCSS</Link>.</code></footer>
+</BaseLayout>

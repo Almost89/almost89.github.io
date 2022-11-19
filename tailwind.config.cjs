@@ -8,6 +8,7 @@ module.exports = {
         almostorange: '#D96C06',
         almostgreen: '#BDBF09',
         almostwhite: '#F5EFED',
+        almostdark: '#0F0A0A',
       },
     },
   },

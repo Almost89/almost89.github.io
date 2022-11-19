@@ -1,0 +1,17 @@
+---
+import "../styles/global.css";
+const { title } = Astro.props
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="author" content="Almost89">
+		<meta name="description" content="Almost89's personal site.">
+		<title>{title} | Almost89</title>
+	</head>
+	<body class="bg-almostwhite overflow-hidden p-6">
+		<slot />
+	</body>
+</html>
