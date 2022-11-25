@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
-const { title } = Astro.props
+import Link from "../components/Link.astro"
+const { title = "forgot" } = Astro.props
 ---
 <html lang="en">
 	<head>
@@ -11,7 +12,7 @@ const { title } = Astro.props
 		<meta name="description" content="Almost89's personal site.">
 		<title>{title} | Almost89</title>
 	</head>
-	<body class="bg-almostwhite overflow-hidden p-6">
+	<body class="bg-almostwhite p-6">
 		<slot />
 	</body>
 </html>
