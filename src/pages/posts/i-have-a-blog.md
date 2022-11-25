@@ -38,4 +38,4 @@ Personally I think that this site is quite ugly so it might need a UI update als
 This is quite a small post but I hope you liked it!
 
 Anyway,
-[Cat saying bye](https://tenor.com/view/goodbye-bye-bye-cat-bye-bye-gif-25847566)
+![Cat saying bye](https://media.tenor.com/5UrK7rSTuscAAAAC/goodbye-bye-bye.gif)
