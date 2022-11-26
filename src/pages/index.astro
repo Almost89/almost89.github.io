@@ -2,13 +2,15 @@
 import BaseLayout from "../layouts/BaseLayout.astro"
 import Link from "../components/Link.astro"
 ---
-<BaseLayout title="Home" hideOverflow=true>
+<BaseLayout title="Home" extraClasses="overflow-hidden">
 	<div class="flex h-screen text-center">
 			<div class="m-auto hover:shadow-lg p-6 rounded-md border border-white/40 hover:border-almostblack hover:-translate-y-3 transition-all">
 				<span class="text-transparent bg-clip-text bg-gradient-to-r from-almostblue to-almostorange font-extrabold text-4xl">Almost89</span><br>
 				<code class="font-semibold tracking-tight text-almostblack">Roblox developer + other cool stuff like that.</code><br>
-				<code class="text-xs font-thin text-almostblack blur-sm hover:blur-none transition-all tracking-tight select-none hover:select-auto">More coming soon™️.</code>
+				<Link href="/posts" extraClasses="text-xs font-thin transition-all tracking-tight">Blog posts</Link>
 			</div>
 		</div>
-		<footer class="-translate-y-14 tracking-tight text-center"><code>Built with <Link href="https://astro.build" target="_blank">Astro</Link> + <Link href="https://tailwindcss.com/" target="_blank">TailwindCSS</Link>.</code></footer>
+		<footer class="-translate-y-14 tracking-tight text-center">
+			<code>Built with <Link href="https://astro.build" target="_blank">Astro</Link> + <Link href="https://tailwindcss.com/" target="_blank">TailwindCSS</Link>.</code>
+		</footer>
 </BaseLayout>

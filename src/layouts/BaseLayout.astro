@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 import Link from "../components/Link.astro"
-const { title = "set the title!", hideOverflow = false } = Astro.props
+const { title = "set the title!", extraClasses="" } = Astro.props
 ---
 <html lang="en">
 	<head>
@@ -12,11 +12,7 @@ const { title = "set the title!", hideOverflow = false } = Astro.props
 		<meta name="description" content="Almost89's personal site.">
 		<title>{title} | Almost89</title>
 	</head>
-	<body class={`bg-almostwhite p-6 ${hideOverflow ? "overflow-hidden" : ""}`}>
-		<div class="bg-yellow-200 w-full h-auto text-yellow-800 p-6 rounded-xl">
-			This site is currently having a makeover. Please report any thing that looks wrong <a href="https://github.com/Almost89/almost89.github.io/issues/new" target="_blank">here</a>.
-		</div>
-		<br/>
+	<body class={`bg-almostwhite p-6 ${extraClasses}`}>
 		<slot />
 	</body>
 </html>

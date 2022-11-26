@@ -3,7 +3,7 @@ import Link from "./Link.astro"
 const { post } = Astro.props
 ---
 <div class="@container">
-  <div class="mx-auto max-w-2xl overflow-hidden rounded-xl border border-almostblack transition-all hover:shadow-md hover:-translate-y-3">
+  <div class="mx-auto max-w-2xl overflow-hidden rounded-xl border border-almostblack transition-all hover:shadow-lg hover:-translate-y-3">
     <div class="@xl:flex h-full">
       <div class="@xl:shrink-0">
         <img class="h-40 w-full object-cover @xl:h-full @xl:w-40" src={post.frontmatter.thumbnail ? post.frontmatter.thumbnail : "https://http.cat/404"} />
