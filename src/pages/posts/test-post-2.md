@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: Test post.
-description: This is a test post for ... guess what!? testing.
+title: Test post 2.
+description: This is a test post for ... guess what!? testing 2.
 thumbnail: https://http.cat/200
-date: 25/11/2022
+date: 26/11/2022
 ---
 
 # one

@@ -2,14 +2,14 @@
 import BaseLayout from "./BaseLayout.astro"
 import Hr from "../components/Hr.astro"
 
-const {frontmatter} = Astro.props;
+const { frontmatter } = Astro.props;
 ---
 <BaseLayout title={frontmatter.title}>
   <h1 class="text-2xl font-black text-almostblue">{frontmatter.title}</h1>
   <p class="font-bold text-sm text-almostorange">{frontmatter.description}</p>
   <p class="text-xs font-semibold text-almostblack">{frontmatter.date}</p>
   <Hr />
-  <article class="prose prose-headings:text-almostblack prose-img:rounded prose-img:transition-all hover:prose-img:drop-shadow-xl hover:prose-img:-translate-y-3 prose-li:marker:text-almostblack/50 prose-p:text-almostblack prose-ul:text-almostblack prose-table:text-almostblack prose-hr:border-almostblack/50">
+  <article class="prose prose-headings:text-almostblack prose-img:rounded-xl prose-img:transition-all hover:prose-img:shadow-xl hover:prose-img:-translate-y-3 prose-li:marker:text-almostblack/50 prose-p:text-almostblack prose-ul:text-almostblack prose-table:text-almostblack prose-hr:border-almostblack/50 prose-pre:!bg-almostblack prose-pre:transition-all hover:prose-pre:drop-shadow-xl hover:prose-pre:-translate-y-3 prose-qoute:border-l-almostblack/50">
     <slot />
   </article>
 </BaseLayout>
