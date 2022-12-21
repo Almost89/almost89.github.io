@@ -2,7 +2,6 @@
 layout: ../../layouts/PostLayout.astro
 title: I have a blog 🎉
 description: Why, how and what next?
-thumbnail: https://media.tenor.com/yoZoWvqXjX0AAAAC/please-blogger.gif
 date: 25/11/2022
 ---
 
